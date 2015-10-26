@@ -10,6 +10,7 @@ class Ability
       cannot :delete, :all
       cannot :update, :all
       cannot :create, :all
+      cannot :new, :all
     end
   end
 end
