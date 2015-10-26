@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Our People</h1>
+<div class="content">
+
+  <% @people.each do |person| %>
+  <div class="person">
+    <%= link_to person_path(person) do %>
+    <%= image_tag person.picture.url(:medium), :class => 'person-image' %>
+    <div class="content">
+      <h4 class="text-center"><%= person.first_name %> <%= person.last_name %></h4>
+      <p class="text-center"><%= person.specialty %></p>
+    </div>
+  </div>
+  <% end %>
+  <% end %>
+</div>

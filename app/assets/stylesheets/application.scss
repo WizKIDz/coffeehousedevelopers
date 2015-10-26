@@ -1,0 +1,152 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import  "bootstrap-sprockets";
+ @import  "bootstrap";
+ .hidden { display: none; }
+ html,
+ body {
+   height: 100%;
+   background-color: #f3f3f3;
+
+   /* The html and body elements cannot have any padding or margin. */
+ }
+
+ /* Wrapper for page content to push down footer */
+ #wrap {
+   min-height: 100%;
+   height: auto !important;
+   height: 100%;
+   /* Negative indent footer by it's height */
+   margin: 0 auto -60px;
+ }
+
+ /* Set the fixed height of the footer here */
+ #push,
+ #footer {
+   height: 60px;
+ }
+ #footer {
+   background-color: #f5f5f5;
+ }
+
+ /* Lastly, apply responsive CSS fixes as necessary */
+ @media (max-width: 767px) {
+   #footer {
+     margin-left: -20px;
+     margin-right: -20px;
+     padding-left: 20px;
+     padding-right: 20px;
+   }
+ }
+
+
+
+ /* Custom page CSS
+ -------------------------------------------------- */
+ /* Not required for template or sticky footer method. */
+
+ .container {
+   width: auto;
+   max-width: 680px;
+ }
+ .container .credit {
+   margin: 20px 0;
+ }
+ .content{
+   margin-bottom: 8px;
+ }
+.navbar-default{
+  background-color: #333333;
+  margin: 0;
+  .navbar-brand{
+    color: white;
+    font-style: italic;
+  }
+  .navbar-nav{
+    li{
+      color: white;
+      a{
+        color: white;
+      }
+      a:hover{
+        color: #f4f4f4;
+        background-color: #0f0f0f;
+      }
+      .active{
+        color:black;
+        a{
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+#jumbotron-contact{
+height: 50%;
+min-height: 240px;
+}
+
+.icon-thumbnail{
+  float: right;
+  top: 0;
+  width: 200px;
+}
+.service{
+  margin: 8px;
+  margin-right: 20px;
+  .content{
+    float: left;
+    width: 100%;
+    h3{
+      font-style: italic;
+    }
+    p{
+
+    }
+  }
+}
+.person{
+  margin: 8px;
+  width: 300px;
+  height: auto;
+  .person-image{
+  }
+}
+.person-profile{
+  margin-left: 10%;
+  margin-right: 10%;
+  .center {
+    display:block;
+    width:300px;
+    margin: 0 auto;
+  }
+  strong{
+    text-align: center;
+  }
+}
+.project{
+  margin: 8px;
+  width: 300px;
+  height: 300px;
+  .project-image{
+
+  }
+  .content{
+
+  }
+}

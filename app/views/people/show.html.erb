@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+<div class="person-profile">
+<%= image_tag @person.picture.url(:medium), :class => 'person-image center', :align=> "middle" %>
+<h3 class="text-center"><%= @person.first_name %> <%= @person.last_name %></h3>
+<strong class="text-center"><%= @person.specialty %></strong>
+<p>
+  <%= @person.bio %>
+</p>
+</div>
+<%= link_to 'Back', people_path %>
