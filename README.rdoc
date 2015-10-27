@@ -3,6 +3,6 @@
 This is my startups, mock, website. It will eventually be used for marketing and communication with people who are interested in doing business with us.
 
 == Setup
-1) rake db:setup
-2) rails s
-3) go to localhost:3000/
+1. rake db:setup
+2. rails s
+3. go to localhost:3000/
