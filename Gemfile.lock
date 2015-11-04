@@ -213,6 +213,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   foreman
+  haml
   jbuilder (~> 2.0)
   jquery-rails
   mail_form

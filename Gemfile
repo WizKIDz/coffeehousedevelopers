@@ -21,6 +21,8 @@ gem 'simple_form'
 gem 'devise'
 gem "cancancan"
 gem 'rails_admin'
+gem 'mail_form'
+gem 'haml'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

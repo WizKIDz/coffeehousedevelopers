@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
+  get 'contact_form/new'
+
+  get 'contact_form/create'
+
   get 'contact/index'
 
   devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :people
   resources :projects
+  resources :contact_forms
   get '/' => 'about#index', as: :about
   get 'contact' => 'contact#index'
   # The priority is based upon order of creation: first created -> highest priority.
