@@ -1,13 +1,16 @@
 <div class="header-wrap">
   <header>
     <h1 class="logo">
+      <%= link_to about_path do %>
       <%= image_tag 'logocoffee', :class => 'coffeehouse' %>
+      <% end %>
     </h1>
     <nav id="navigation">
       <ul id="top-menu" class="sf-menu">
-        <li><a href="/">Work</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Work</a></li>
         <li><a href="/people">People</a></li>
-        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     </nav>
   </header>

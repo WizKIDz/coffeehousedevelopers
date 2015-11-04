@@ -21,7 +21,6 @@
  body {
    height: 100%;
    background-color: #f3f3f3;
-
    /* The html and body elements cannot have any padding or margin. */
  }
 
@@ -55,6 +54,7 @@
       top: 5.9%;
       left: 2.9%;
       width: 80%;
+      color: white;
     }
   }
 
@@ -172,6 +172,9 @@ min-height: 240px;
     overflow: hidden;
     background-color: red;
   }
+  .title{
+
+  }
   .coffeehouse{
     height: 73px;
     width: auto;
@@ -217,4 +220,55 @@ min-height: 240px;
       }
     }
   }
+}
+#hero-grid{
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  .box{
+    .title{
+      font-style: italic;
+      text-align: center;
+    }
+    p{
+      font-weight: 20pt;
+      padding: 8px;
+    }
+  }
+}
+.box-table{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  .item{
+    width: 33.33%;
+    height: 300px;
+    min-width: 300px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #one{
+    order: 1;
+  }
+  #two{
+    order: 2;
+  }
+  #three{
+    order: 3;
+  }
+  #three{
+    order: 4;
+  }
+  .small{
+    max-width: 100px;
+  }
+}
+.padding{
 }

@@ -1,17 +1,19 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Our People</h1>
-<div class="content">
-
-  <% @people.each do |person| %>
-  <div class="person">
-    <%= link_to person_path(person) do %>
-    <%= image_tag person.picture.url(:medium), :class => 'person-image' %>
-    <div class="content">
-      <h4 class="text-center"><%= person.first_name %> <%= person.last_name %></h4>
-      <p class="text-center"><%= person.specialty %></p>
+<div class="hero-wrapper">
+  <%= image_tag 'teampic', :class => "hero-image" %>
+  <div class="top-left">
+    <h2>Coffee House</h2>
+    <h4>Techonolgy solutions for big and small</h4>
+  </div>
+</div>
+<div id="hero-grid" class="hero-chunk">
+  <div class="box">
+    <h2 class="title">Team</h2>
+    <div class="box-table">
+      <% @people.each do |person| %>
+      <div id="one" class="item">
+        <%= image_tag person.picture.url(:medium) %>
+      </div>
+      <% end %>
     </div>
   </div>
-  <% end %>
-  <% end %>
 </div>
